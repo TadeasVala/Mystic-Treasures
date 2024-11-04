@@ -91,7 +91,7 @@ header {
     width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
     .navigation li, .instagram-link {
         font-size: 1.5em;
     }
