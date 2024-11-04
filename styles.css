@@ -6,6 +6,10 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+p {
+    font-family: Itim;
+}
+
 body {
     background-color: #0A122A;
     color: white;
@@ -56,11 +60,6 @@ header {
     color: #e1306c; /* Instagram's pink color */
   }
 
-@media only screen (max-width: 768px) {
-    .navigation li {
-    }
-}
-
 
 .o-mystic-treasures {
     background-image: url("back.jpg");
@@ -92,10 +91,24 @@ header {
     width: 100%;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 768px) {
+    .navigation li, .instagram-link {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 2.25em;
+    }
     .naramky-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns on mobile */
-        gap: 40px;
+        flex-direction: column;
     }
 }
