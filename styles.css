@@ -1,13 +1,21 @@
 * {
     padding: 0;
-    box-sizing: border-box;
     line-height: 1.6;
+    box-sizing: border-box;
     letter-spacing: 0.5px;
     font-family: Arial, Helvetica, sans-serif
 }
 
-p {
-    font-family: Itim;
+p, a {
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
 }
 
 body {
@@ -23,23 +31,23 @@ header {
     justify-content: space-between;
 }
 
-.navigation {
+.nav {
     display: flex;
 }
 
-.navigation li {
+.nav li {
     margin: 0 30px;
     display: flex;
     align-items: center;
 }
 
-.navigation li a {
+.nav li a {
     color: white;
     text-decoration: none;
     margin: 15px;
 }
 
-.navigation li a:hover {
+.nav li a:hover {
     transform: scale(1.1);
     color: red;
     font-weight: bold;
@@ -49,7 +57,7 @@ header {
     display: inline-block;
     margin: 0 10px;
     color: white; /* Set icon color */
-    font-size: 24px; /* Set icon size */
+    font-size: 3em; /* Set icon size */
     text-decoration: none;
     transition: transform 0.2s ease;
   }
@@ -65,14 +73,14 @@ header {
     background-image: url("back.jpg");
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
     color: white;
-    text-shadow: black 1px 1px 2px;
+    text-shadow: black 2px 2px 3px;
     padding: 20px 20px;
 }
 
@@ -82,38 +90,71 @@ header {
 
 .naramky-container {
     display: flex;
+    justify-content: space-around;
     width: 100%;
     gap: 40px;
-    padding: 20px 40px 0px 40px;
+    padding: 0px 40px 0px 40px;
 }
 
 * img {
     width: 100%;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#instagram-link-footer {
+    opacity: 0;
+}
+
 @media only screen and (max-width: 1280px) {
+    .o-mystic-treasures {
+        height: 1700px;
+    }
     body {
         margin: 30px;
     }
-    
-    .navigation li, .instagram-link {
-        font-size: 1.5em;
-        margin: 0px;
+
+    .nav {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .naramky-container {
+        flex-direction: column;
     }
 
     p {
-        font-size: 2em;
-    }
-    h1 {
         font-size: 3em;
     }
+    h1 {
+        font-size: 4em;
+    }
     h2 {
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
     h3 {
-        font-size: 2.25em;
+        font-size: 3.25em;
     }
-    .naramky-container {
-        flex-direction: column;
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #instagram-link-footer {
+        font-size: 3em;
+        opacity: 100;
     }
 }
